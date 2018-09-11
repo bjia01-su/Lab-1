@@ -6,34 +6,32 @@ html, body{
 .header{
     height: 60px;
     line-height: 60px;
-    padding: 0 24px;
-    background-color: rgba(128, 128, 128, 0.9);
-    float: left;
+    padding: 20px;
+    background-color: rgba(32, 32, 32, 0.9);
+    display: flex;
+    justify-content: space-between;
 }
 
 h1{
-    margin: 0px;
+    text-align: left;
+    margin: 0;
     color: rgba(245, 245, 245, 0.9)
 }
 
-.header ul{
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-}
-
-.header li {
-    margin-left: 20px;
-    float: left;
-}
-
-.header li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
+.header a{
     text-decoration: none;
-    color: rgba(245, 245, 245, 0.9)
+    color: white;
+    margin-left: 20px;
+}
+
+.navigation{
+    margin: 0px;
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.main{
+    display: flex;
 }
 
 .content{
@@ -41,6 +39,7 @@ h1{
     width: 70%;
     background-color: lightgrey;
     float: left;
+    min-height: 500px;
 }
 
 .sidebar{
@@ -49,8 +48,14 @@ h1{
     background-color: darkgray;
     color: white;
     float: left;
+    display: inline-flex;
 }
 
-p{
+.content p{
     margin: 20px;
 }
+
+.sidebar p{
+    margin: 20px;
+}
+
